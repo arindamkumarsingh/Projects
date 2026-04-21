@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides a **single-file workflow** for:
+This project is implemented in the **C programming language** and provides a **single-file workflow** for:
 
 * Compressing data using **Huffman coding**
 * Obfuscating it using a simple **XOR operation**
@@ -14,13 +14,13 @@ The compressed file is self-contained, so no external metadata files are require
 
 ## Files
 
-```bash
+```bash id="dotcra"
 huffman_xor.c   → Main tool (compress + decompress)
 ```
 
 After compilation, you’ll use a single executable:
 
-```bash
+```bash id="w09cfq"
 huffman_xor
 ```
 
@@ -28,7 +28,7 @@ huffman_xor
 
 ## Compilation
 
-```bash
+```bash id="x9lsvc"
 gcc huffman_xor.c -o huffman_xor
 ```
 
@@ -38,7 +38,7 @@ gcc huffman_xor.c -o huffman_xor
 
 ### 🔹 Compress + Encrypt
 
-```bash
+```bash id="pzdhue"
 ./huffman_xor c input.txt output.hx 123
 ```
 
@@ -53,7 +53,7 @@ gcc huffman_xor.c -o huffman_xor
 
 ### 🔹 Decrypt + Decompress
 
-```bash
+```bash id="o0ejn4"
 ./huffman_xor d output.hx recovered.txt 123
 ```
 
